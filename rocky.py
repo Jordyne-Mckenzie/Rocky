@@ -14,7 +14,7 @@ history = [
  ]
 import random
 def rocky(round_history):
-    if not round_history:
+    if not history:
        return(random.choice(["rock", "paper", "scissors"]))
     opponent_move = [past_history["opponent"] for past_history in round_history]
     counts = {"rock":opponent_move.count("rock"),"paper":opponent_move.count("paper"),"scissors":opponent_move.count("scissors")}
